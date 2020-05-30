@@ -3,6 +3,15 @@ package TicTacToe;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/*
+Everybody remembers this paper-and-pencil game from childhood:
+Tic-Tac-Toe, also known as Noughts and crosses or Xs and Os.
+A single mistake usually costs you the game,
+But thankfully it is simple enough that most players discover the best strategy quickly.
+This is a Tic-Tac-Toe game for two players!
+ */
+
+
 public class TicTacToe {
     private final char[][] board = new char[3][3];
     private char currentPlayerMark = 'X';
