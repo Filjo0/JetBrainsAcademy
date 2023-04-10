@@ -11,10 +11,10 @@ You want to buy k tickets to the neighboring seats in the same row. Find whether
 
 public class Cinema {
 
-   private static final Scanner scanner = new Scanner(System.in);
-   private static final int rows = scanner.nextInt();
-   private static final int seats = scanner.nextInt();
-   private static final int[][] ARR = new int[rows][seats];
+    private static final Scanner scanner = new Scanner(System.in);
+    private static final int rows = scanner.nextInt();
+    private static final int seats = scanner.nextInt();
+    private static final int[][] ARR = new int[rows][seats];
 
 
     public static void main(String[] args) {

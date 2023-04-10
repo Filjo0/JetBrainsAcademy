@@ -17,8 +17,7 @@ that are not on the blacklist.
 
 class CollectionUtils {
 
-    public static Collection<String> filterPhones(Collection<String> phones,
-                                                  Collection<String> blacklist) {
+    public static Collection<String> filterPhones(Collection<String> phones, Collection<String> blacklist) {
         phones.removeIf(blacklist::contains);
         return phones;
     }
@@ -31,11 +30,8 @@ class Blacklist {
         Collection<String> phones = Arrays.asList(scanner.nextLine().split("\\s+"));
         Collection<String> blockList = Arrays.asList(scanner.nextLine().split("\\s+"));
 
-        Collection<String> nonBlockedPhones = CollectionUtils.filterPhones(
-                new ArrayList<>(phones), new ArrayList<>(blockList));
+        Collection<String> nonBlockedPhones = CollectionUtils.filterPhones(new ArrayList<>(phones), new ArrayList<>(blockList));
 
-        System.out.println(nonBlockedPhones.stream()
-                .map(Object::toString)
-                .collect(Collectors.joining(" ")));
+        System.out.println(nonBlockedPhones.stream().map(Object::toString).collect(Collectors.joining(" ")));
     }
 }

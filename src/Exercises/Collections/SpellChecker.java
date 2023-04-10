@@ -24,8 +24,7 @@ class SpellChecker {
             Collections.addAll(text, line.split(" "));
         }
 
-        HashSet<String> unknownWords = ColUtils.unknownWords(
-                new HashSet<>(text), new HashSet<>(knownWords));
+        HashSet<String> unknownWords = ColUtils.unknownWords(new HashSet<>(text), new HashSet<>(knownWords));
 
         LinkedList<String> list = new LinkedList<>(unknownWords);
         Iterator<String> itr = list.descendingIterator();
@@ -39,8 +38,7 @@ class SpellChecker {
 
 class ColUtils {
 
-    public static HashSet<String> unknownWords(HashSet<String> list1,
-                                               HashSet<String> list2) {
+    public static HashSet<String> unknownWords(HashSet<String> list1, HashSet<String> list2) {
         list1.removeIf(list2::contains);
         return list1;
     }

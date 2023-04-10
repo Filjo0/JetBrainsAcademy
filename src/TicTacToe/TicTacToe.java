@@ -131,8 +131,7 @@ public class TicTacToe {
                     winO++;
                     return true;
                 }
-            } else if ((checkRowColDiag(board[0][0], board[1][1], board[2][2]))
-                    || (checkRowColDiag(board[0][2], board[1][1], board[2][0]))) {
+            } else if ((checkRowColDiag(board[0][0], board[1][1], board[2][2])) || (checkRowColDiag(board[0][2], board[1][1], board[2][0]))) {
                 if (board[1][1] == 'X') {
                     winX++;
                     return true;
